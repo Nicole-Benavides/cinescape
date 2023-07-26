@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartelera de Películas</title>
+    <link rel="stylesheet" href="css/Styles.css">
+</head>
+<body>
+
+    <section id="cartelera">
+
+        <header>
+            <a href="#" class="iconoMenu" onclick="Menu()"><img src="img/menu.png" alt="icono menu"></a>
+            <a href="index.html"><img src="img/icon-logo.png" alt="icono logo"></a>
+            <a href="#" class="iconoUser"><img src="img/user.png" alt="icono usuario"></a>
+        </header>
+
+        <!-- Botones de filtro -->
+        <div class="cont-botones">
+            <a href="#" class="active" id="btn-aventuras" onclick="aventuras()">Aventuras</a>
+            <a href="#" id="btn-animadas" onclick="animadas()">Animadas</a>
+            <a href="#" id="btn-drama" onclick="drama()">Drama</a>
+        </div>
+
+        <!-- Contenedores cambiantes -->
+        <!-- aventuras -->
+        <div class="cont-carteleras active" id="aventuras">
+
+            <p>
+                Descubre emocionantes películas de aventura <br>
+                llenas de acción, peligro y exóticos lugares en <br>
+                CINESCAPE.
+            </p>
+
+
+            <!-- Estrenos -->
+            <h3>Estrenos:</h3>
+            <hr>
+
+            <div class="cont-scroll">
+                <a href="#" onclick="modal()"><img  id="guardianes"   src="img/guardianes3.jpg" alt="Guardianes de la Galaxia III"></a>
+
+                <a href="#" onclick="modal()"><img src="img/mariobros.jpg" alt="Super Mario Bros"></a>
+
+                <a href="#" onclick="modal()"><img src="img/flash.jpg" alt="Shazam 2"></a>
+
+                <a href="#" onclick="modal()"><img src="img/dungeons.jpg" alt="Dungeons and Dragons"></a>
+            </div>
+
+            <!-- Proximamente -->
+            <h3>Proximamente:</h3>
+            <hr>
+
+            <div class="cont-scroll">
+                <a href="#" onclick="modal()"><img src="img/flash.jpg" alt="Flash"></a>
+
+                <a href="#" onclick="modal()"><img src="img/megalodon.jpg" alt="Meg II"></a>
+
+                <a href="#" onclick="modal()"><img src="img/barbie.jpeg" alt="Barbie"></a>
+
+                <a href="#" onclick="modal()"><img src="img/lasirenita.jpg" alt="La sirenita"></a>
+            </div>
+    
+        </div>
+
+        <!-- animadas -->
+        <div class="cont-carteleras" id="animadas">
+
+            <p>
+                Sumérgete en el maravilloso mundo de las películas animadas, donde la diversión y la magia cobran vida <br>
+                en CINESCAPE.
+            </p>
+
+            <!-- Estrenos -->
+            <h3>Estrenos:</h3>
+            <hr>
+
+            <div class="cont-scroll">
+                <a href="#" onclick="modal()"><img src="img/Spider_Man_Across_the_Spider_Verse.jpg" alt="Spider man"></a>
+
+                <a href="#" onclick="modal()"><img src="img/chicken_run_dawn_of_the_nugget_ver9.jpg" alt="Chicken Run"></a>
+
+                <a href="#" onclick="modal()"><img src="img/tigerapprentice.jpg" alt="The Tiger’s Apprentice"></a>
+
+                <a href="#" onclick="modal()"><img src="img/migration.jpg" alt="Migration"></a>
+            </div>
+
+            <!-- Proximamente -->
+            <h3>Proximamente:</h3>
+            <hr>
+
+            <div class="cont-scroll">
+                <a href="#" onclick="modal()"><img src="img/Trolls_3.jpg" alt="Trolls 3"></a>
+
+                <a href="#" onclick="modal()"><img src="img/Craig_of_the_Creek_Key_Art.jpg" alt="Craig of the Creek"></a>
+
+                <a href="#" onclick="modal()"><img src="img/Gilgamesh-poster.jpg" alt="Gilgamesh"></a>
+
+                <a href="#" onclick="modal()"><img src="img/Elemental.jpg" alt="Elemental"></a>
+            </div>
+    
+        </div>
+
+        <!-- drama -->
+        <div class="cont-carteleras" id="drama">
+
+            <p>
+                Explora las profundidades de las emociones humanas <br> a través de las intensas películas de drama <br> que te harán reflexionar, 
+                en CINESCAPE
+            </p>
+
+            <!-- Estrenos -->
+            <h3>Estrenos:</h3>
+            <hr>
+
+            <div class="cont-scroll">
+
+                <a href="#" onclick="modal()"><img src="img/till_drama.jpg" alt="Till"></a>
+
+                <a href="#" onclick="modal()"><img src="img/the_whale_drama.jpg" alt="The Whale"></a>
+
+                <a href="#" onclick="modal()"><img src="img/tar_drama.jpg" alt="Tar"></a>
+
+                <a href="#" onclick="modal()"><img src="img/fabelman_drama.jpg" alt="Fabelman"></a>
+            </div>
+
+            <!-- Proximamente -->
+            <h3>Proximamente:</h3>
+            <hr>
+
+            <div class="cont-scroll">
+                <a href="#" onclick="modal()"><img src="img/killersflowermoon_drama.jpg" alt="Killers Flower Moon"></a>
+
+                <a href="#" onclick="modal()"><img src="img/oppenheimer_drama.jpg" alt="Oppenheimer"></a>
+
+                <a href="#" onclick="modal()"><img src="img/wonka_drama.jpg" alt="Wonka"></a>
+
+                <a href="#" onclick="modal()"><img src="img/Napoleon_drama.jpg" alt="Napoleón"></a>
+            </div>
+    
+        </div>
+
+        <div class="modal" id="modal">
+            <a href="#" class="close" onclick="cerrarM()">X</a>
+            <img src="img/mariobros.jpg" alt="Super Msrio Bros">
+            <a href="#" class="play"><img src="img/boton_play1.png" alt="Boton de play relleno"></a>
+            <h3>
+                Super Mario <br>
+                Bros. La Película
+            </h3>
+            <hr>
+            <p>
+                Estreno: 06-Abri-2023 <br>
+                Accción, Comedia 
+                <br> <br>
+
+                De Nintendo e Illumination llega una nueva <br>
+                película animada basada en el mundo de <br>
+                Super Mario Bros. Dirigida por by Aaron <br>
+                Horvath y Michael Jelenic (colaboradores en <br>
+                Los Jóvenes Titanes en acción, Jóvenes <br>
+                Titanes en acción: la película) de un guion <br>
+                de Matthew Fogel (La gran aventura LEGO <br>
+                2, Minions: Nace un villano).
+            </p>
+        </div>
+
+        <div class="menu " id="menu">
+            <a href="#" onclick="Menu()"><img src="img/menu.png" alt="icono menu"></a>
+            <a href="#">Editar Mi cuenta</a>
+            <hr>
+            <ul>
+                <li><a href="#">-Home</a></li>
+                <li><a href="#">-Aventuras</a></li>
+                <li><a href="#">-Animadas</a></li>
+                <li><a href="#">-Drama</a></li>
+                <li><a href="#">-Comedia</a></li>
+                <li><a href="#">-Ficción</a></li>
+                <li><a href="#">-Nacionales</a></li>
+            </ul>
+            <a href="#">Cerrar Sesión</a>
+        </div>
+
+
+    </section>
+
+    <script src="js/Main.js"></script>
+</body>
+</html>
